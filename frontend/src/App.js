@@ -18,16 +18,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Serverless Greeter</h1>
+      <h1>Testv3</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Enter your name v2"
+          placeholder="Enter your name v3"
           required
         />
-        <button type="submit">Say Hello</button>
+        <button type="submitv2">Testv3</button>
       </form>
       {message && <p>{message}</p>}
     </div>
