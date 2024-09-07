@@ -2,7 +2,8 @@ name: Backend CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - main
     paths:
       - 'backend/**'
 
@@ -15,10 +16,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.8'
-    - name: Install dependencies
-      run: |
-        cd backend
-        pip install -r requirements.txt
     - name: Deploy to AWS Lambda
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

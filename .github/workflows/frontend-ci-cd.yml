@@ -2,7 +2,8 @@ name: Frontend CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
     paths:
       - 'frontend/**'
 
@@ -18,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd frontend
-        npm ci
+        npm install
     - name: Build
       run: |
         cd frontend
