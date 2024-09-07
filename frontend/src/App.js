@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [name, setName] = useState('');
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Testv3</h1>
+      <h1>Testv3s</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
