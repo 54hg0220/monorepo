@@ -2,7 +2,7 @@ import json
 
 
 def lambda_handler(event, context):
-    message = f"Hello, Welcome to our serverless application."
+    message = f"Hello, Welcome to our serverless application.v2"
 
     return {
         "statusCode": 200,
