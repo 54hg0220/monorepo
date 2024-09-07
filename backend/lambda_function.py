@@ -2,7 +2,7 @@ import json
 
 
 def lambda_handler(event, context):
-    message = f"This is test v3"
+    message = "This is test v3"
 
     return {
         "statusCode": 200,
