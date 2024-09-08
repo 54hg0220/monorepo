@@ -20,11 +20,17 @@ jobs:
       run: |
         cd frontend
         npm install
+    - name: Run tests
+      run: |
+        cd frontend
+        npm test -- --watchAll=false
     - name: Build
+      if: success()
       run: |
         cd frontend
         npm run build
     - name: Deploy to AWS S3
+      if: success()
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
