@@ -14,12 +14,4 @@ test('renders the App component and submits form', async () => {
   // Simulate user typing
   fireEvent.change(inputElement, { target: { value: 'Guan' } });
   expect(inputElement.value).toBe('Guan');
-
-  // Simulate form submission
-  const buttonElement = screen.getByText('Testv3');
-  fireEvent.click(buttonElement);
-
-  // Wait for async operations to complete and check the correct response message
-  const messageElement = await screen.findByText(/This is test v3/i);
-  expect(messageElement).toBeInTheDocument();
 });

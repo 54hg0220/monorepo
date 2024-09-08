@@ -43,7 +43,7 @@ repos:
         pass_filenames: false
         files: pyproject.toml
 
-      # New local hook to run pytest
+      # Local hook to run pytest
       - id: pytest
         name: Run Pytest for Backend
         entry: poetry run pytest
@@ -52,10 +52,10 @@ repos:
         always_run: true
         files: ^backend/
 
-      # New local hook to run npm test
+      # Updated local hook to run npm test
       - id: npm-test
         name: Run npm test for Frontend
-        entry: cd frontend && npm test -- --watchAll=false
+        entry: bash -c "cd frontend && npm test -- --watchAll=false"  # Update entry with bash command
         language: system
         pass_filenames: false
         always_run: true
