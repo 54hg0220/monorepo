@@ -27,7 +27,7 @@ function App() {
           placeholder="Enter your name v3"
           required
         />
-        <button type="submitv2">Check out</button>
+        <button type="submit">Check out</button> {/* Fixed button type */}
       </form>
       {message && <p>{message}</p>}
     </div>
