@@ -14,7 +14,7 @@ test('renders the App component and submits form', async () => {
   expect(inputElement.value).toBe('Guan');
 
   // Simulate form submission
-  const buttonElement = screen.getByText('Testv3');
+  const buttonElement = screen.getByText('Check out');
   fireEvent.click(buttonElement);
 
   // Wait for async operations to complete and check the response message
