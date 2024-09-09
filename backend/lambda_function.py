@@ -6,7 +6,6 @@ It defines the main entry point for the Lambda execution.
 
 import json
 
-
 def lambda_handler(event, context):
     """
     AWS Lambda function handler for processing incoming requests.
@@ -24,7 +23,7 @@ def lambda_handler(event, context):
         dict: A dictionary containing the response with status code, body, and
         headers.
     """
-    message = "This is test v3"
+    message = "This is test v2"
 
     return {
         "statusCode": 200,
