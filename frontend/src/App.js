@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Testv3</h1>
+      <h1>Guan's Apps</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -27,8 +27,7 @@ function App() {
           placeholder="Enter your name v3"
           required
         />
-        <button type="submitv2">Testv3
-        </button>
+        <button type="submit">Check out</button> {/* Fixed button type */}
       </form>
       {message && <p>{message}</p>}
     </div>
