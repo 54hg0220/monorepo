@@ -18,16 +18,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Guan's Apps</h1>
+      <h1>Teams' Apps</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Enter your name v3"
+          placeholder="Enter your team"
           required
         />
-        <button type="submit">Check out v2</button> {/* Fixed button type */}
+        <button type="submit">Check out your team</button> {/* Fixed button type */}
       </form>
       {message && <p>{message}</p>}
     </div>

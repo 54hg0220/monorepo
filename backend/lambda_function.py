@@ -23,7 +23,7 @@ def lambda_handler(event, context):
         dict: A dictionary containing the response with status code, body, and
         headers.
     """
-    message = "This is test v2"
+    message = "This is team"
 
     return {
         "statusCode": 200,
