@@ -24,11 +24,7 @@ def lambda_handler(event, context):
         dict: A dictionary containing the response with status code, body, and
         headers.
     """
-    message = "This is a team"
-
-
-    
-
+    message = "<html><head><title>Team Message</title></head><body><h1>This is a team</h1></body></html>"
     return {
         "statusCode": 200,
         "body": json.dumps({"message": message}),

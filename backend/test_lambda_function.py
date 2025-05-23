@@ -15,4 +15,4 @@ def test_lambda_handler():
     # Assert the response
     assert response["statusCode"] == 200
     body = json.loads(response["body"])
-    assert body["message"] == "This is a team"
+    assert body["message"] == "<html><head><title>Team Message</title></head><body><h1>This is a team</h1></body></html>"
